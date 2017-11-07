@@ -72,12 +72,17 @@ As aplicações Web são páginas Web adaptadas para os smartphones e tablets. P
 
 A aplicação web é desenvolvida por meio das tecnologias core da Web que são o HTML (responsável pela estrutura de páginas Web), CSS (atribui o estilo, a apresentação e animações da página) e a linguagem de programação Javascript (define interações do usuário com a página, tratamentos e animações dando dinâmica à mesma) [18, 26]. Estas aplicações podem ser acessadas também por plataformas para desktops, como Windows, Linux e macOS, o que permite atingir um maior número de usuários. Por exigir apenas uma base de código de seu desenvolvimento as aplicações Web oferece a mesma interface e componentes para todas as plataformas, tornando o custo de sua produção menor que as aplicações nativas e híbridas, porém a sua distribuição não é suportada pelas lojas dessas mesmas plataformas não podendo ser instalada ou usadas \textit{offline} [14,15]. O que para alguns pode ser um ponto positivo à não distribuição em uma loja o que torna a atualização instantânea em milhares de dispositivos.[13]
 
-Outro ponto negativo, são os ativos que necessitam ser baixados, como por exemplo, frameworks ou bibliotecas que auxiliam no desenvolvimento, como a biblioteca Jquery Mobile o que culmina em um significativo aumento na latência da rede afetando a experiência do usuário [14].
+Outro ponto negativo, são os ativos que necessitam ser baixados, como por exemplo, \textit{frameworks} ou bibliotecas que auxiliam no desenvolvimento, como a biblioteca Jquery Mobile o que culmina em um significativo aumento na latência da rede afetando a experiência do usuário [14].
 
 Devido aos grandes avanços das tecnologias Web e com a proposta de melhorar as desvantagens desta abordagem, ela vem sofrendo desde 2015 grandes alterações para atender melhor aos dispositivos mobile, sendo chamado de \textit{Progressive Web Apps}.
 
-
 \subsection{\esp Híbrido Web}
+
+As aplicações híbridas tem por objetivo um único desenvolvimento para as plataformas. Utilizam-se de tecnologias Web (HTML, CSS e JavaScript) para a criação de interfaces e componentes, ou seja, a aplicação híbrida simula por meio de tecnologias Web o comportamento dos aplicativos nativos [18]. Utiliza o browser nativo ou um \textit{framework} para acessar as APIs nativas da plataforma, por meio do Javascript[13].
+
+O Phonegap é um \textit{framework open-source} de desenvolvimento híbrido compatível com o Android e iOS. Os arquivos HTML, CSS e JavaScript gerados durante o desenvolvimento da aplicação são empacotados junto com o Phonegap. No processo de build da aplicação é criado um pacote compatível com a plataforma a qual foi destinada, o que permite a publicação da aplicação em uma loja de aplicativos, assim como os aplicativos nativos [18]. Ao executar a aplicação em uma plataforma o phonegap identifica a plataforma e chama apenas as APIs referentes a mesma, desta forma, é renderizado apenas os componentes que representa o comportamento dos componentes nativos, que ao ser clicado é redirecionado para algum ponto da aplicação ou API da plataforma. [14, 23].
+
+É ainda possível pelo phonegap a customização de plugins nativos para cada plataforma, sendo assim, criado quando necessário [14]. Por não utilizar um recurso nativo para os componentes e não utilizar uma linguagem nativa da plataforma, essa abordagem tem como principal desvantagem a performance e desconformidade com os componentes nativos, o que pode atrapalhar a imersão e navegação dos usuários. [24]
 
 
 
