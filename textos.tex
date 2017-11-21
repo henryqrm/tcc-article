@@ -8,9 +8,9 @@
 %%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%
 \section{\esp Introdução}
 
-Os dispositivos móveis como smartphones e tablets se tornaram uma extensão de nós para as tarefas do nosso cotidiano, desde buscar informações até tarefas mais elaboradas como fazer compras através de aplicativos. Segundo o jornal \textit{The Independent} o número de dispositivos móveis ativos já supera o número de pessoas no mundo, no ano de 2014 haviam em torno de 7,22 bilhões de dispositivos, contra 7,19 bilhões de pessoas \cite{2-independent}. O crescente uso dos dispositivos movimentou em 2016 cerca de US\$ 82,2 bilhões nas duas principais lojas de aplicativos, \textit{Apple Store} e \textit{Play Store} \cite{1-appannie}.
+Os dispositivos móveis como \textit{smartphones} e \textit{tablets} se tornaram uma extensão de nós para as tarefas do nosso cotidiano, desde buscar informações até tarefas mais elaboradas como fazer compras através de aplicativos. Segundo o jornal \textit{The Independent} o número de dispositivos móveis ativos já supera o número de pessoas no mundo, no ano de 2014 haviam em torno de 7,22 bilhões de dispositivos, contra 7,19 bilhões de pessoas \cite{2-independent}. O crescente uso dos dispositivos movimentou em 2016 cerca de US\$ 82,2 bilhões nas duas principais lojas de aplicativos, \textit{Apple Store} e \textit{Play Store} \cite{1-appannie}.
 
-Uma aplicação mobile deve considerar vários fatores antes de iniciar o projeto de desenvolvimento, que começa pela escolha da abordagem de desenvolvimento Nativo, Híbrido Web e a Web Mobile. A Web Mobile não conseguia competir diretamente com as aplicações nativas e híbridas por não oferecer, até então, o mesmo desempenho e a mesma experiência de navegação para os usuários [11]. Porém, as tecnologia que compõem a Web estão em constante evolução a fim de contornar tais problemas.
+Uma aplicação mobile deve considerar vários fatores antes de iniciar o projeto de desenvolvimento, que começa pela escolha da abordagem de desenvolvimento Nativo, Híbrido Web e a Web Mobile. A Web Mobile não conseguia competir diretamente com as aplicações nativos e híbridos por não oferecer, até então, o mesmo desempenho e a mesma experiência de navegação para os usuários [11]. Porém, as tecnologia que compõem a Web estão em constante evolução a fim de contornar tais problemas.
 
 O movimento \textit{Progressive Web Apps} (PWA) iniciado pela Google em 2015 traz a evolução para a abordagem de desenvolvimento Web Mobile. Na conferência realizada pela empresa no mesmo ano, a Chrome Dev [3, 4, 5], os engenheiros Alex Russell e Andreas Bovens trouxeram a proposta para a comunidade de desenvolvedores [6]. Empresas de grande expressão no mercado mundial como a Uber[7] e o Twitter[8] fizeram os primeiros testes em seus produtos obtendo resultados bastante positivos.
 
@@ -20,13 +20,13 @@ A novidade utiliza menos de 1MB no armazenamento, traz um aumento de mais de 30\
 
 Os casos de estudos de empresas que estão testando essa abordagem de desenvolvimento estão disponíveis no site oficial do \textit{Google Developers} [9].
 
-Observar o impacto que a abordagem de desenvolvimento PWA proporciona aos usuários, aos desenvolvedores de software, e a forma como o contato dessa nova abordagem trará ao mercado, a influência na interação, uso e, consequentemente, seu estudo, é importante para os que utilizam dispositivos móveis. Ligado diretamente a experiência, a execução e ao auxílio das tarefas essa abordagem pode afetar os usuários finais que podem ter sua experiência prejudicada, caso esta não seja coerente com a realidade atual de uso que já são oferecidas pelas aplicações nativas e híbridas.
+Observar o impacto que a abordagem de desenvolvimento PWA proporciona aos usuários, aos desenvolvedores de \textit{software}, e a forma como o contato dessa nova abordagem trará ao mercado, a influência na interação, uso e, consequentemente, seu estudo, é importante para os que utilizam dispositivos móveis. Ligado diretamente a experiência, a execução e ao auxílio das tarefas essa abordagem pode afetar os usuários finais que podem ter sua experiência prejudicada, caso esta não seja coerente com a realidade atual de uso que já são oferecidas pelas aplicações nativos e híbridos.
 
 Portanto, o objetivo deste trabalho é desenvolver uma aplicação utilizando os conceitos e tecnologias da Web moderna por meio da PWA. Posteriormente, comparar os resultados alcançados com as abordagens Nativo, Híbrido Web e Web Mobile.
 
 \section{\esp Abordagem de desenvolvimento}
 
-Há uma variedade de sistemas operacionais, denominados plataformas, para gerenciar os dispositivos móveis, os smartphones e tablets. Hoje o mais utilizado é a plataforma Android da fabricante Google seguido do iOS, da Apple. Os dois sistemas operacionais juntos, ocupam 99,6\% do mercado para estes dispositivos [19]. Portanto, ao citar as plataformas neste trabalho remete-se a Android e iOS.
+Há uma variedade de sistemas operacionais, denominados plataformas, para gerenciar os dispositivos móveis, os \textit{smartphones} e \textit{tablets}. Hoje o mais utilizado é a plataforma Android da fabricante Google seguido do iOS, da Apple. Os dois sistemas operacionais juntos, ocupam 99,6\% do mercado para estes dispositivos [19]. Portanto, ao citar as plataformas neste trabalho remete-se a Android e iOS.
 
 Há muitas formas de desenvolver aplicações mobile, contudo, hoje as principais abordagens de desenvolvimento para os dispositivos mobile são o Nativo, Híbrido Web e Web Mobile. Devido às constantes melhorias das tecnologias, a abordagem Web Mobile recebeu uma nova denominação de \textit{Progressive Web App} (PWA) devido a grande transição  tecnológica que representa.
 
@@ -38,7 +38,7 @@ Aplicativos nativos são binários executáveis de uma plataforma, que podem ser
 
 A plataforma é responsável por gerenciar as funcionalidades, ambiente e recursos nativos do dispositivo como o GPS, câmera, acelerômetro, entre outras. Ele disponibiliza, mediante a autorização do usuário, os recursos para terceiros através de \textit{Application Programming Interface} (API). A execução nativa consiste unicamente para cada plataforma, ao qual, deve ser utilizado o SDK que é um pacote de ferramentas, componentes e interfaces necessários para o desenvolvimento da aplicação, este pacote é oferecido pela empresa fabricante da plataforma \cite{14-ibm}.
 
-Ao desenvolver uma aplicação nativa requer um esforço muito grande, pois é preciso desenvolver a mesma aplicação para todas as plataformas que se deseja atender, porque a execução nativa consiste unicamente para a plataforma que é desenvolvida, isso eleva o custo de seu desenvolvimento, pois cada plataforma possui SDK, interface, \textit{hardware} e linguagens de programação diferentes \cite{14-ibm}[13, 28], exigindo conhecimento específico da plataforma, assim como noções de fluxo e processos internos. Requer das empresas um número maior de times de desenvolvedores com conhecimentos específicos para cada plataforma \cite{14-ibm}. E apesar do iOS e Android serem os líderes do mercado, há outras plataformas que possuem nicho específico como Windows Mobile 10, Firefox OS, BlackBerry, Ubuntu Touch, Tizen e outros.
+Ao desenvolver uma aplicação nativo requer um esforço muito grande, pois é preciso desenvolver a mesma aplicação para todas as plataformas que se deseja atender, porque a execução nativa consiste unicamente para a plataforma que é desenvolvida, isso eleva o custo de seu desenvolvimento, pois cada plataforma possui SDK, interface, \textit{hardware} e linguagens de programação diferentes \cite{14-ibm}[13, 28], exigindo conhecimento específico da plataforma, assim como noções de fluxo e processos internos. Requer das empresas um número maior de times de desenvolvedores com conhecimentos específicos para cada plataforma \cite{14-ibm}. E apesar do iOS e Android serem os líderes do mercado, há outras plataformas que possuem nicho específico como Windows Mobile 10, Firefox OS, BlackBerry, Ubuntu Touch, Tizen e outros.
 
 % Tabela
 \begin{table}[htb]
@@ -61,15 +61,15 @@ Ao desenvolver uma aplicação nativa requer um esforço muito grande, pois é p
 	{\footnotesize\\ \textbf{Fonte: \cite{14-ibm, 15-phyo}}}
 \end{table}
 
-As aplicações nativas possuem uma ótima performance, pois não há nenhum intermediário para executar a aplicação, e por ter acesso direto aos recursos e funcionalidades do dispositivo, possui os mesmos recursos, interface e componentes utilizados na plataforma, o que proporciona um uso imersivo e intuitivo para o usuário final. [13]
+As aplicações nativos possuem uma ótima performance, pois não há nenhum intermediário para executar a aplicação, e por ter acesso direto aos recursos e funcionalidades do dispositivo, possui os mesmos recursos, interface e componentes utilizados na plataforma, o que proporciona um uso imersivo e intuitivo para o usuário final. [13]
 
 Com o objetivo de superar o desenvolvimento para várias plataformas e ainda, suprir a necessidade de conhecimentos específicos para cada plataforma, há ferramentas como \textit{React Native}, \textit{Xamarin} e \textit{NativeScript} que possibilita o uso de linguagens de programação não nativos para fazer uso dos recursos e APIs. A ferramenta gera um binário nativo para cada plataforma, que intercepta e gerencia os recursos nativos delegando para outra linguagem de programação como JavaScript e C#, por exemplo. A aplicação gerada por este outro método de desenvolvimento nativo oferece os mesmos recursos, experiência e imersão para os usuários e recebe bastante destaque devido a suas vantagens [25].
 
 \subsection{\esp Web Mobile}
 
-As aplicações Web são páginas Web adaptadas para os smartphones e tablets. Por meio do acesso à internet é acessível pelo browser nativo da plataforma, ou por um browser terceiro, porém há limitações de recursos nativos impedindo de criar aplicações robustas que necessitam de um maior processamento, sendo assim, a performance atrapalha significativamente a interação e experiência do usuário final [15, 14]. Através de um link, provido pelo protocolo HTTP, o browser faz uma requisição a um servidor que envia os ativos (arquivos). O browser interpreta os ativos e renderiza as informações [28, 15]. Por ser uma aplicação interpretada pelo browser da plataforma, o mesmo pode ser visualizado por todas as plataformas.
+As aplicações Web são páginas Web adaptadas para os \textit{smartphones} e \textit{tablets}. Por meio do acesso à internet é acessível pelo browser nativo da plataforma, ou por um browser terceiro, porém há limitações de recursos nativos impedindo de criar aplicações robustas que necessitam de um maior processamento, sendo assim, a performance atrapalha significativamente a interação e experiência do usuário final [15, 14]. Através de um link, provido pelo protocolo HTTP, o browser faz uma requisição a um servidor que envia os ativos (arquivos). O browser interpreta os ativos e renderiza as informações [28, 15]. Por ser uma aplicação interpretada pelo browser da plataforma, o mesmo pode ser visualizado por todas as plataformas.
 
-A aplicação web é desenvolvida por meio das tecnologias core da Web que são o HTML (responsável pela estrutura de páginas Web), CSS (atribui o estilo, a apresentação e animações da página) e a linguagem de programação Javascript (define interações do usuário com a página, tratamentos e animações dando dinâmica à mesma) [18, 26]. Estas aplicações podem ser acessadas também por plataformas para desktops, como Windows, Linux e macOS, o que permite atingir um maior número de usuários. Por exigir apenas uma base de código de seu desenvolvimento as aplicações Web oferece a mesma interface e componentes para todas as plataformas, tornando o custo de sua produção menor que as aplicações nativas e híbridas, porém a sua distribuição não é suportada pelas lojas dessas mesmas plataformas não podendo ser instalada ou usadas \textit{offline} [14,15]. O que para alguns pode ser um ponto positivo à não distribuição em uma loja o que torna a atualização instantânea em milhares de dispositivos.[13]
+A aplicação web é desenvolvida por meio das tecnologias core da Web que são o HTML (responsável pela estrutura de páginas Web), CSS (atribui o estilo, a apresentação e animações da página) e a linguagem de programação Javascript (define interações do usuário com a página, tratamentos e animações dando dinâmica à mesma) [18, 26]. Estas aplicações podem ser acessadas também por plataformas para desktops, como Windows, Linux e macOS, o que permite atingir um maior número de usuários. Por exigir apenas uma base de código de seu desenvolvimento as aplicações Web oferece a mesma interface e componentes para todas as plataformas, tornando o custo de sua produção menor que as aplicações nativos e híbridos, porém a sua distribuição não é suportada pelas lojas dessas mesmas plataformas não podendo ser instalada ou usadas \textit{offline} [14,15]. O que para alguns pode ser um ponto positivo à não distribuição em uma loja o que torna a atualização instantânea em milhares de dispositivos.[13]
 
 Outro ponto negativo, são os ativos que necessitam ser baixados, como por exemplo, \textit{frameworks} ou bibliotecas que auxiliam no desenvolvimento, como a biblioteca Jquery Mobile o que culmina em um significativo aumento na latência da rede afetando a experiência do usuário [14].
 
@@ -85,16 +85,16 @@ O Phonegap é um \textit{framework open-source} de desenvolvimento híbrido comp
 
 \subsection{\esp Problemas Comuns}
 
-O mercado competitivo dos smartphones e tablets tem impulsionado a melhorar os recursos de hardware como, por exemplo, o armazenamento interno, memória, CPU, entre outros. Junto com o crescente uso dos dispositivos empresas seguem a tendência do mercado para oferecer soluções para os seus clientes, fazendo com que o número de aplicações nativas e híbridas aumente consideravelmente nas lojas de aplicativos. No ano de 2016 cerca de 2,81 milhões de aplicações na Google Play e 2,26 milhões na Apple Store [16, 17].
+O mercado competitivo dos \textit{smartphones} e \textit{tablets} tem impulsionado a melhorar os recursos de hardware como, por exemplo, o armazenamento interno, memória, CPU, entre outros. Junto com o crescente uso dos dispositivos empresas seguem a tendência do mercado para oferecer soluções para os seus clientes, fazendo com que o número de aplicações nativos e híbridos aumente consideravelmente nas lojas de aplicativos. No ano de 2016 cerca de 2,81 milhões de aplicações na Google Play e 2,26 milhões na Apple Store [16, 17].
 
-Devido ao grande consumo de recursos que as aplicações nativos e híbridos exigem como armazenamento, processamento e alocação de memória, ocassiona a lentidão dos smartphones devido a limitações de hardware. Consequentemente muitos usuários optam por desinstalar os aplicativos que não são de uso recorrente, como por exemplo aplicativo de estacionamento de shopping, no qual o usuário tem que instalar apenas para fazer o checkout. Em um outro estudo feito em 2017 pela AppsFlyer diz que os usuários brasileiros, em uma lista de 11 países, estão entre os que mais desinstala aplicativos com 51\%, ficando atrás apenas da Argentina com 54\% das desinstalações, dentre os aplicativos que são mais desinstalados estão os de Estilo de Vida, Entretenimento, Viagens, Jogos, Notícias e Revistas, sendo os aplicativos que ainda se mantém instalados são os de alimentações, mídias sociais e utilitários básicos como players de música e vídeo. [22]
+Devido ao grande consumo de recursos que as aplicações nativos e híbridos exigem como armazenamento, processamento e alocação de memória, ocassiona a lentidão dos \textit{smartphones} devido a limitações de hardware. Consequentemente muitos usuários optam por desinstalar os aplicativos que não são de uso recorrente, como por exemplo aplicativo de estacionamento de shopping, no qual o usuário tem que instalar apenas para fazer o checkout. Em um outro estudo feito em 2017 pela AppsFlyer diz que os usuários brasileiros, em uma lista de 11 países, estão entre os que mais desinstala aplicativos com 51\%, ficando atrás apenas da Argentina com 54\% das desinstalações, dentre os aplicativos que são mais desinstalados estão os de Estilo de Vida, Entretenimento, Viagens, Jogos, Notícias e Revistas, sendo os aplicativos que ainda se mantém instalados são os de alimentações, mídias sociais e utilitários básicos como players de música e vídeo. [22]
 
 O que agrava mais a situação é baixar a aplicação através da internet 3G que possui baixa taxa de transferência de dados. Segundo a classificação do ano de 2014 da revista Veja o Brasil está em 9º lugar com as piores conexões de internet[20]. Em um ranking de 41 países feito pelo Netflix no ano de 2016 ocupa a 10ª posição [21].
 
 
-\subsection{\esp Progressive Web Apps}
+\subsection{\esp \textit{Progressive Web Apps}}
 
-A alternativa para os problemas  das aplicações híbridas e nativas, a Progressive Web App (PWAs), surgiu de um movimento   iniciado pela Google o que trouxe o mesmo desempenho e experiência dos aplicativos nativos e plataformas.Em 2015 na conferência Chrome Dev Summit [o, o, o], foi introduzida pelos engenheiros de software Alex Russell e Andreas Bovens a Progressive Web App (PWAs) é a evolução da Web Application Mobile. A proposta é tornar as aplicações Web o mais próximo das aplicações nativas[28], sendo o browser o intermediário de acesso aos recursos nativos.
+A alternativa para os problemas das aplicações híbridos e nativos, a Progressive Web Apps (PWAs), surgiu de um movimento iniciado pela Google o que trouxe o mesmo desempenho e experiência dos aplicativos nativos e plataformas.Em 2015 na conferência \textit{Chrome Dev Summit} [o, o, o], foi introduzida pelos engenheiros de \textit{software} Alex Russell e Andreas Bovens a PWA é a evolução da Web Mobile. A proposta é tornar as aplicações Web o mais próximo das aplicações nativos[28], sendo o browser o intermediário de acesso aos recursos nativos.
 
 A PWA dá suporte para todas as plataformas, independente do dispositivo, uma vez que estes implementem as últimas (desde 2015) especificações da W3C [o], CSSWG [o], WHATWG [o] e ecma-262 [27] que possibilita uma página Web ser uma aplicação progressiva à medida em que o usuário à utiliza. [o, o]
 
@@ -113,19 +113,19 @@ Devido a questões mercadológicas a Apple, fabricante da plataforma IOS, ainda 
 
 \section{\esp EXPERIMENTO: PROTÓTIPO}
 
-O trabalho foi desenvolvido com base nas diretrizes da engenharia de software do autor Sommerville [30]. A finalidade  do protótipo é gerar uma aplicação que posteriormente será utilizada em casas de Happy Hour utilizando a abordagem de desenvolvimento PWA, bem como prática e implementação do mesmo. Assim será possível fazer testes que elencam pontos positivos e negativos na utilização da abordagem e de todo conjunto ferramental que o acompanha. É premissa da aplicação oferecer compatibilidade com qualquer dispositivo que possua um browser moderno instalado, entenda-se browser moderno como os que possuem as especificações da W3C implementadas, desde o ano de 2016.
+O trabalho foi desenvolvido com base nas diretrizes da engenharia de \textit{software} do autor Sommerville [30]. A finalidade  do protótipo é gerar uma aplicação que posteriormente será utilizada em casas de \textit{Happy Hour} utilizando a abordagem de desenvolvimento PWA, bem como prática e implementação do mesmo. Assim será possível fazer testes que elencam pontos positivos e negativos na utilização da abordagem e de todo conjunto ferramental que o acompanha. É premissa da aplicação oferecer compatibilidade com qualquer dispositivo que possua um browser moderno instalado, entenda-se browser moderno como os que possuem as especificações da W3C implementadas, desde o ano de 2016.
 
-Segundo Sommerville [30], um processo de desenvolvimento de software pode ser definido como um conjunto de atividades e resultados associados que conduzem à produção de um produto de software. Processos de software são complexos e depende inteiramente da ação do humano, assim como qualquer processo intelectual. Por essa razão, existe uma grande variedade de processos de software, nenhum ideal, desenvolvido de maneira diferente por cada organização de acordo com suas necessidades. Portanto neste trabalho, é adotado algumas etapas fundamentais e de maneira resumida a especificação, projeto e implementação do protótipo, que consequentemente, serão produzidos os devidos artefatos.
+Segundo Sommerville [30], um processo de desenvolvimento de \textit{software} pode ser definido como um conjunto de atividades e resultados associados que conduzem à produção de um produto de \textit{software}. Processos de \textit{software} são complexos e depende inteiramente da ação do humano, assim como qualquer processo intelectual. Por essa razão, existe uma grande variedade de processos de \textit{software}, nenhum ideal, desenvolvido de maneira diferente por cada organização de acordo com suas necessidades. Portanto neste trabalho, é adotado algumas etapas fundamentais e de maneira resumida a especificação, projeto e implementação do protótipo, que consequentemente, serão produzidos os devidos artefatos.
 
 \subsection{\esp Análise, Especificação e Requisitos}
 
-Esta etapa é fundamental para o entendimento do desenvolvimento do protótipo, sendo definido as necessidades e problemas que as casas de Happy Hour possuem, isso irá nos conduzir para todo o restante do processo de desenvolvimento.
+Esta etapa é fundamental para o entendimento do desenvolvimento do protótipo, sendo definido as necessidades e problemas que as casas de \textit{Happy Hour} possuem, isso irá nos conduzir para todo o restante do processo de desenvolvimento.
 
-Casas de Happy Hour são bares ou restaurantes que proporcionam aos clientes um ambiente  de lazer e entretenimento  nos horários livres. Os estabelecimentos oferecem para os seus clientes, em geral, bebidas alcoólicas, refrigerantes e sucos, além de uma diversidade de petiscos até pratos mais complexos. Todos os produtos disponíveis no cardápio em geral são com preços populares para atrair os cliente, e muitas vezes oferecem descontos e até bebidas de gratuitas.
+Casas de \textit{Happy Hour} são bares ou restaurantes que proporcionam aos clientes um ambiente  de lazer e entretenimento  nos horários livres. Os estabelecimentos oferecem para os seus clientes, em geral, bebidas alcoólicas, refrigerantes e sucos, além de uma diversidade de petiscos até pratos mais complexos. Todos os produtos disponíveis no cardápio em geral são com preços populares para atrair os cliente, e muitas vezes oferecem descontos e até bebidas de gratuitas.
 
 Em geral, o estabelecimento oferece dois modos de atendimento para adquirir seus produtos. O primeiro é por meio de uma comanda ao qual o garçom coleta os pedidos dos clientes, que em seguida traz os mesmos, e ao fechar a comanda o cliente faz os devidos pagamentos. O segundo é através do guichê de pedidos em que o cliente adquiri fichas e retira os pedidos no balcão de atendimento. Estes dois tipos de atendimentos proporcionam problemas ao aumentar o número de clientes no estabelecimento, apresentando gargalo nos pedidos e atendimento. O protótipo proposto deste trabalho apresenta uma solução para o primeiro caso abordado. A fim de delimitar o escopo da aplicação devido a complexidade de implementação e do fator tempo para o desenvolvimento do trabalho.
 
-O sistema será dividido em dois componentes. Uma aplicação client-side Progressive Web Apps que disponibiliza uma interface usual para os usuários. E uma aplicação server-side, que é um Web Service Restful que fornece os recursos como serviço pelo protocolo HTTP que atua na comunicação com outras aplicações através de uma API.
+O sistema será dividido em dois componentes. Uma aplicação \textit{client-side} \textit{Progressive Web Apps} que disponibiliza uma interface usual para os usuários. E uma aplicação \textit{server-side}, que é um Web Service Restful que fornece os recursos como serviço pelo protocolo HTTP que atua na comunicação com outras aplicações através de uma API.
 
 De forma a garantir as ações processuais que o protótipo deve tomar ao realizar as ações dos usuários, os requisitos funcionais foram elencados e identificados para atender as regras de negócio do problema proposto.
 
@@ -217,16 +217,169 @@ A estruturação do fluxo da aplicação e os caminhos possíveis que o usuário
 
 Ao atingir esta etapa do processo de desenvolvimento nos permite criar o wireframe que é um esboço de baixa fidelidade da interface do protótipo. O wireframe permite entender os aspectos visuais, arquitetura da informação e as estruturas da interface, mostrando como será exibido as informações nas telas como menus, botões, estruturas, imagens e formas. É um guia visual para o desenvolvimento das telas.
 
+% Figura Tela 1
+\begin{figure}[ht]
+	\centering	
+	\caption[\hspace{0.1cm}]{Tela - Seleção de mesas por QR Code}
+	\vspace{-0.4cm}
+	\includegraphics[width=0.6\textwidth]{figuras/c_home.png}
+	% Caption centralizada
+% 	\captionsetup{justification=centering}
+	% Caption e fonte 
+	 \vspace{-0.2cm}
+	\\\textbf{\footnotesize Fonte: Criado pelo autor }
+	\label{fig:w1}
+\end{figure}
+\vspace{-0.5cm}
+
+
+% Figura Tela 2
+\begin{figure}[ht]
+	\centering	
+	\caption[\hspace{0.1cm}]{Tela - Seleção de mesas por disponibilidade}
+	\vspace{-0.4cm}
+	\includegraphics[width=0.6\textwidth]{figuras/c_tables.png}
+	% Caption centralizada
+% 	\captionsetup{justification=centering}
+	% Caption e fonte 
+	 \vspace{-0.2cm}
+	\\\textbf{\footnotesize Fonte: Criado pelo autor }
+	\label{fig:w2}
+\end{figure}
+\vspace{-0.5cm}
+
+% Figura Tela 3
+\begin{figure}[ht]
+	\centering	
+	\caption[\hspace{0.1cm}]{Tela - Modos de pagamentos}
+	\vspace{-0.4cm}
+	\includegraphics[width=0.6\textwidth]{figuras/c_payment.png}
+	% Caption centralizada
+% 	\captionsetup{justification=centering}
+	% Caption e fonte 
+	 \vspace{-0.2cm}
+	\\\textbf{\footnotesize Fonte: Criado pelo autor }
+	\label{fig:w3}
+\end{figure}
+\vspace{-0.5cm}
+
+% Figura Tela 4
+\begin{figure}[ht]
+	\centering	
+	\caption[\hspace{0.1cm}]{Tela - Modo de pagamento: Outra pessoa}
+	\vspace{-0.4cm}
+	\includegraphics[width=0.6\textwidth]{figuras/c_payment.png}
+	% Caption centralizada
+% 	\captionsetup{justification=centering}
+	% Caption e fonte 
+	 \vspace{-0.2cm}
+	\\\textbf{\footnotesize Fonte: Criado pelo autor }
+	\label{fig:w4}
+\end{figure}
+\vspace{-0.5cm}
+
+% Figura Tela 5
+\begin{figure}[ht]
+	\centering	
+	\caption[\hspace{0.1cm}]{Tela - Modo de pagamento: Adicionar Cartão de crédito}
+	\vspace{-0.4cm}
+	\includegraphics[width=0.6\textwidth]{figuras/c_payment.png}
+	% Caption centralizada
+% 	\captionsetup{justification=centering}
+	% Caption e fonte 
+	 \vspace{-0.2cm}
+	\\\textbf{\footnotesize Fonte: Criado pelo autor }
+	\label{fig:w5}
+\end{figure}
+\vspace{-0.5cm}
+
+
+% Figura Tela 6
+\begin{figure}[ht]
+	\centering	
+	\caption[\hspace{0.1cm}]{Tela - Lista de produtos}
+	\vspace{-0.4cm}
+	\includegraphics[width=0.6\textwidth]{figuras/c_prods.png}
+	% Caption centralizada
+% 	\captionsetup{justification=centering}
+	% Caption e fonte 
+	 \vspace{-0.2cm}
+	\\\textbf{\footnotesize Fonte: Criado pelo autor }
+	\label{fig:w6}
+\end{figure}
+\vspace{-0.5cm}
+
+% Figura Tela 7
+\begin{figure}[ht]
+	\centering	
+	\caption[\hspace{0.1cm}]{Tela - Informação do produto}
+	\vspace{-0.4cm}
+	\includegraphics[width=0.6\textwidth]{figuras/c_produto.png}
+	% Caption centralizada
+% 	\captionsetup{justification=centering}
+	% Caption e fonte 
+	 \vspace{-0.2cm}
+	\\\textbf{\footnotesize Fonte: Criado pelo autor }
+	\label{fig:w7}
+\end{figure}
+\vspace{-0.5cm}
+
+% Figura Tela 8
+\begin{figure}[ht]
+	\centering	
+	\caption[\hspace{0.1cm}]{Tela - Resumo dos pedidos}
+	\vspace{-0.4cm}
+	\includegraphics[width=0.6\textwidth]{figuras/c_resume.png}
+	% Caption centralizada
+% 	\captionsetup{justification=centering}
+	% Caption e fonte 
+	 \vspace{-0.2cm}
+	\\\textbf{\footnotesize Fonte: Criado pelo autor }
+	\label{fig:w8}
+\end{figure}
+\vspace{-0.5cm}
+
+% Figura Tela 9
+\begin{figure}[ht]
+	\centering	
+	\caption[\hspace{0.1cm}]{Tela - Espera dos produtos}
+	\vspace{-0.4cm}
+	\includegraphics[width=0.6\textwidth]{figuras/c_resume.png}
+	% Caption centralizada
+% 	\captionsetup{justification=centering}
+	% Caption e fonte 
+	 \vspace{-0.2cm}
+	\\\textbf{\footnotesize Fonte: Criado pelo autor }
+	\label{fig:w9}
+\end{figure}
+\vspace{-0.5cm}
+
+
+% Figura Tela 10
+\begin{figure}[ht]
+	\centering	
+	\caption[\hspace{0.1cm}]{Tela - Satisfação do atendimento}
+	\vspace{-0.4cm}
+	\includegraphics[width=0.6\textwidth]{figuras/c_finish.png}
+	% Caption centralizada
+% 	\captionsetup{justification=centering}
+	% Caption e fonte 
+	 \vspace{-0.2cm}
+	\\\textbf{\footnotesize Fonte: Criado pelo autor }
+	\label{fig:w10}
+\end{figure}
+\vspace{-0.5cm}
+
 \subsection{\esp Decisões técnicas e tecnologias}
 
-O desenvolvimento do client-side utilizando a abordagem Progressive Web Apps é obrigatório o uso das tecnologias core da Web: HTML, CSS e Javascript. Devido ao uso da linguagem Javascript o server-side será desenvolvido em Node.js que é interpretador Javascript no lado do servidor. A utilização da linguagem Javascript permite uma implementação isomórfica, ou seja, a mesmo linguagem de programação para toda as etapas de desenvolvimento de ponta a ponta, client-side e server-side.
+O desenvolvimento do \textit{client-side} utilizando a abordagem \textit{Progressive Web App}s é obrigatório o uso das tecnologias core da Web: HTML, CSS e Javascript. Devido ao uso da linguagem Javascript o \textit{server-side} será desenvolvido em Node.js que é interpretador Javascript no lado do servidor. A utilização da linguagem Javascript permite uma implementação isomórfica, ou seja, a mesmo linguagem de programação para toda as etapas de desenvolvimento de ponta a ponta, \textit{client-side} e \textit{server-side}.
 
 Portanto, para desenvolver a aplicação é utilizado um conjunto ferramental que utiliza as seguintes tecnologias:
 
 \begin{enumerate}
 	\item [1] Visual Studio Code: Editor de texto que será o ambiente de desenvolvimento para implementar a  aplicação com suporte a Javascript, CSS e HTML e outros recursos que auxiliam no desenvolvimento.
 	\item [2] Git e github: Ferramentas integradas de versionamento, repositório de arquivos e compartilhamento do código.
-	\item [3] Vue.js: Biblioteca que auxilia na criação de SPA, Web Componentes e outros recursos modernos da Web que são utilizados no Progressive Web Apps.
+	\item [3] Vue.js: Biblioteca que auxilia na criação de SPA, Web Componentes e outros recursos modernos da Web que são utilizados no \textit{Progressive Web Apps}.
 	\item [4] Framework7: Framework para vue.js que disponibiliza componentes UI mobile para ser fidedigna ao wireframe e as tendências de design atual. Os componentes presentes no wireframe que não possuem no framework, será desenvolvido pelo autor.
 	\item [5] Node.js: Plataforma desenvolvida em cima do motor Javascript do navegador Google Chrome. Com ele é possível construir facilmente aplicações com rede de forma escalável. Outra característica é o modelo de I/O direcionada a evento não bloqueante que o torna leve e eficiente, sendo ideal para aplicações em tempo real que tem uma massiva troca de dados.
 	\item [6] Express:  Framework para node.js que permite de maneira fácil e flexível a criação de aplicações Web robustas e escaláveis utilizando o protocolo HTTP, e aplicando os conceitos de roteamento e middlewares.
@@ -235,13 +388,13 @@ Portanto, para desenvolver a aplicação é utilizado um conjunto ferramental qu
 
 \end{enumerate}
 
-\subsection{\esp Aplicação server-side}
+\subsection{\esp Aplicação \textit{server-side}}
 
-Web Service é uma solução que procura resolver o problema de comunicação entre aplicações que empregam diferentes tecnologias utilizando protocolos da Internet. A aplicação server-side segue a mesma proposta deste modelo implementando a arquitetura REST no qual utiliza os verbos do protocolo HTTP (GET, POST, DELETE, PUT e PATCH) para definir uma rota que provém recursos e serviços.
+Web Service é uma solução que procura resolver o problema de comunicação entre aplicações que empregam diferentes tecnologias utilizando protocolos da Internet. A aplicação \textit{server-side} segue a mesma proposta deste modelo implementando a arquitetura REST no qual utiliza os verbos do protocolo HTTP (GET, POST, DELETE, PUT e PATCH) para definir uma rota que provém recursos e serviços.
 
-O uso do padrão MVC no server-side permite que cada recurso seja gerido de forma independente com características, implementações e responsabilidades distintas no ORM, que por sua vez, retorna os recursos solicitados.  Todo recurso é caracterizado por transações sem estado e são imutáveis para a persistência no banco de dados.
+O uso do padrão MVC no \textit{server-side} permite que cada recurso seja gerido de forma independente com características, implementações e responsabilidades distintas no ORM, que por sua vez, retorna os recursos solicitados.  Todo recurso é caracterizado por transações sem estado e são imutáveis para a persistência no banco de dados.
 
-O banco de dados noSQL utiliza o conceito de schema que é uma interface para modelo de documentos. Por ser um conceito relativamente novo na computação, não há uma solução proposta na notação UML da engenharia de software para banco de dados não relacional. Portanto, segundo XXX [32] a modelagem dos dados é baseada em blocos de documentos e subdocumentos, aos quais podem ser referenciados a outros documentos.
+O banco de dados noSQL utiliza o conceito de schema que é uma interface para modelo de documentos. Por ser um conceito relativamente novo na computação, não há uma solução proposta na notação UML da engenharia de \textit{software} para banco de dados não relacional. Portanto, segundo XXX [32] a modelagem dos dados é baseada em blocos de documentos e subdocumentos, aos quais podem ser referenciados a outros documentos.
 
 % Figura
 \begin{figure}[ht]
@@ -258,31 +411,31 @@ O banco de dados noSQL utiliza o conceito de schema que é uma interface para mo
 \end{figure}
 \vspace{-0.5cm}
 
-\subsection{\esp Aplicação Client-side}
+\subsection{\esp Aplicação \textit{Client-side}}
 
-O Vue.js incorpora os princípios da Web moderna usando o padrão MVVM (Model View ViewModel) que é ideal para a implementação da interface do client-side utilizando a abordagem Progressive Web App. A sua separação clara de responsabilidades entre os componentes permite que a aplicação seja modular, flexível, testável e acima de tudo de fácil manutenção.
+O Vue.js incorpora os princípios da Web moderna usando o padrão MVVM (Model View ViewModel) que é ideal para a implementação da interface do \textit{client-side} utilizando a abordagem Progressive Web App. A sua separação clara de responsabilidades entre os componentes permite que a aplicação seja modular, flexível, testável e acima de tudo de fácil manutenção.
 
-O uso constante de múltiplos dados, estados, componentes e interações dos recursos torna a manipulação dos dados complexo. O uso de gerenciamento dos dados e estados da aplicação a fim de centralizar e organizar, e paralelamente, fazendo a comunicação com o servidor para que os dados sejam atualizadas permite a consistência de todas as informações. Logo, assim que um dado é alterado na aplicação client-side, é enviado uma requisição para o servidor alterar o mesmo recurso, e consequentemente persistir no banco de dados. Para isso é definido os mesmo schemas (documentos) utilizados no banco de dados, ou seja, o modelo de dados no server-side, é o mesmo modelo no client-side, não necessitando nenhum parseamento, apenas validação dos dados nas camadas de comunicação. Para implementar esse conceito o vue.js utiliza um plugin vuex.
+O uso constante de múltiplos dados, estados, componentes e interações dos recursos torna a manipulação dos dados complexo. O uso de gerenciamento dos dados e estados da aplicação a fim de centralizar e organizar, e paralelamente, fazendo a comunicação com o servidor para que os dados sejam atualizadas permite a consistência de todas as informações. Logo, assim que um dado é alterado na aplicação \textit{client-side}, é enviado uma requisição para o servidor alterar o mesmo recurso, e consequentemente persistir no banco de dados. Para isso é definido os mesmo schemas (documentos) utilizados no banco de dados, ou seja, o modelo de dados no \textit{server-side}, é o mesmo modelo no \textit{client-side}, não necessitando nenhum parseamento, apenas validação dos dados nas camadas de comunicação. Para implementar esse conceito o vue.js utiliza um plugin vuex.
 
 A aplicação é composta por uma única página HTML (index.html), que contém a chamada a todos os ficheiros Javascript e CSS usados, e inicializa a aplicação através do uso da propriedade id="app". Inicializando o componente principal  da aplicação que permite fazer as configurações globais, incorporação dos demais componentes e dependências através do arquivo “main.js” ao qual é codificado de forma a seguir o wireframe proposto.
 
 
 [IMAGEM]  Print das telas da aplicação para cada tela, explicar o que ela faz
 
-A aplicação utilizando a abordagem Progressive Web Apps se diferencia da abordagem Web Application Mobile pela presença de três tecnologias principais que são elucidadas a seguir:
+A aplicação utilizando a abordagem \textit{Progressive Web Apps} se diferencia da abordagem Web Mobile pela presença de três tecnologias principais que são elucidadas a seguir:
 
 \begin{enumerate}
 	\item [1] localStorage: Permite o armazenamento de dados no dispositivo do cliente. É premissa da abordagem a utilização local dos dados e estados.
 	\item [2] Service Works: Permite o funcionamento offline da aplicação. Ela fica como um interceptador da aplicação cliente e servidor. Dentre as propostas dessa API dos browsers modernos é permitir armazenar a aplicação em cache, interceptar pedidos de rede afim de verificar se está online, atualizar a aplicação com a última versão do servidor, mandar notificações (push notifications) e permitir ainda habilitar a execução da aplicação em background.
-	\item [3] Web App Manifest: Tem como proposta fornecer características de exibição de aplicação nativa ao navegador para evitar transição muito brusca ao disponibilizar os recursos, e tornar a aplicação instalável. É configurável os ícones da aplicação, nome de identificação e inicialização visual que são mostrados antes do carregamento da aplicação.
+	\item [3] Web App Manifest: Tem como proposta fornecer características de exibição de aplicação nativo ao navegador para evitar transição muito brusca ao disponibilizar os recursos, e tornar a aplicação instalável. É configurável os ícones da aplicação, nome de identificação e inicialização visual que são mostrados antes do carregamento da aplicação.
 \end{enumerate}
 
 \section{\esp RESULTADO E DISCUSSÃO}
-Como resultado do trabalho obtivemos resultados relevantes ao utilizar a abordagem Progressive Web Apps no qual foi possível tornar uma página Web em uma aplicação progressiva no qual proporciona o uso dos recursos nativos da plataforma. Utiliza recursos como push notification, tendo navegabilidade fluida, com rápidas interações, usável (mesmo em conexões ruins de rede) e instalável, no qual é criado um ícone na tela inicial do dispositivo do usuário que irá abrir em tela cheia assim como nos aplicativos nativos.
+Como resultado do trabalho obtivemos resultados relevantes ao utilizar a abordagem \textit{Progressive Web Apps} no qual foi possível tornar uma página Web em uma aplicação progressiva no qual proporciona o uso dos recursos nativos da plataforma. Utiliza recursos como push notification, tendo navegabilidade fluida, com rápidas interações, usável (mesmo em conexões ruins de rede) e instalável, no qual é criado um ícone na tela inicial do dispositivo do usuário que irá abrir em tela cheia assim como nos aplicativos nativos.
 
 Contudo, a abordagem apresenta desvantagens significativas que devem ser levadas em consideração a sua escolha ao desenvolvimento de uma aplicação mobile. Ao relacionar com as outras abordagens, como já citado  no trabalho, o suporte dos browsers e o desinteresse mercadológico da Apple são pontos relevantes a decisão.
 
-Na tabela abaixo podemos observar a relação entre as abordagens, e em destaque, as evoluções da Web  Mobile para a Progressive Web Apps.
+Na tabela abaixo podemos observar a relação entre as abordagens, e em destaque, as evoluções da Web  Mobile para a \textit{Progressive Web Apps}.
 
 
 % Tabela
@@ -294,7 +447,7 @@ Na tabela abaixo podemos observar a relação entre as abordagens, e em destaque
 	% Conteúdo da tabela
 	\begin{tabular}{l|c|c}
   \hline
-    \textbf{Considerações}	& \textbf{Hibrído} & \textbf{Nativo} & \textbf{Web Mobile} & \textbf{Progressive Web Apps} \\
+    \textbf{Considerações}	& \textbf{Hibrído} & \textbf{Nativo} & \textbf{Web Mobile} & \textbf{\textit{Progressive Web Apps}} \\
 	\hline
 	Esforço para suportar plataformas & Médio & Alto & Baixo & Baixo \\
 	Acesso aos recursos do dispositivo & Completo & Completo & Parcial & Parcial (Em expansão) \\	
@@ -318,7 +471,7 @@ Na tabela abaixo podemos observar a relação entre as abordagens, e em destaque
 	{\footnotesize\\ \textbf{Fonte: [12], editado pelo autor}}
 \end{table}
 
-Em relação a abordagem Web Mobile, o modelo arquitetural da PWA se dá pela adição e configuração do Service Workers, do arquivo Manifest.json, acesso às APIs nativas pelo browser e o incremento no server-side do PUSH API que envia um Push notification para a aplicação instalada.
+Em relação a abordagem Web Mobile, o modelo arquitetural da PWA se dá pela adição e configuração do Service Workers, do arquivo Manifest.json, acesso às APIs nativas pelo browser e o incremento no \textit{server-side} do PUSH API que envia um Push notification para a aplicação instalada.
 
 % Figura
 \begin{figure}[ht]
@@ -335,30 +488,30 @@ Em relação a abordagem Web Mobile, o modelo arquitetural da PWA se dá pela ad
 \end{figure}
 \vspace{-0.5cm}
 
-Na arquitetura apresentada na figura x, possui dois componentes principais, o servidor e o browser do cliente. A comunicação entre eles se dá pelo Web Service (server-side) através da interface API que trabalha em cima do protocolo de Internet HTTP.
+Na arquitetura apresentada na figura x, possui dois componentes principais, o servidor e o browser do cliente. A comunicação entre eles se dá pelo Web Service (\textit{server-side}) através da interface API que trabalha em cima do protocolo de Internet HTTP.
 
 O Web service centraliza e distribui os recursos da aplicação, assim como explicado na seção x.x. A camada Controller é responsável pela regra de negócio da aplicação, que ao término do processamento, passa a responsabilidade para a camada de persistência, Model, gerenciando e persistindo os dados processados no banco de dados. Esse modelo interno desta arquitetura é conhecido como MVC (Model-View-Controller), sendo o View caracterizado pela camada API.
 
-O browser do cliente ao acessar o servidor faz o download dos ativos e renderiza a interface da aplicação graças aos arquivos HTML,  CSS, Javascript ou quaisquer outros recursos estáticos que fornece a estrutura da PWA (client-side). A PWA através do Javascript faz a utilização dos recursos nativos da camada Mobile OS através das APIs do browser.
+O browser do cliente ao acessar o servidor faz o download dos ativos e renderiza a interface da aplicação graças aos arquivos HTML,  CSS, Javascript ou quaisquer outros recursos estáticos que fornece a estrutura da PWA (\textit{client-side}). A PWA através do Javascript faz a utilização dos recursos nativos da camada Mobile OS através das APIs do browser.
 
 A camada Service Worker presente na PWA faz o cache e armazenamento da aplicação, que podem ser carregados instantaneamente numa próxima execução. Ao inicializar a aplicação para execução no segundo plano, mesmo a aplicação não estando no primeiro plano, é possível manter contato com o servidor que disponibiliza a camada de PUSH API para o envio de notificações remotas. Toda solicitação HTTP é interceptada pelo Service Worker, ao qual é redirecionada para um recurso em cache, armazenamento local ou para a rede.
 
 A aplicação foi publicada na hospedagem heroku (disponível em http://happy-hour-pwa.heroku.com) e o código fonte e arquivos estão disponíveis no github:
 
 \begin{enumerate}
-	\item client-side: https://github.com/henryqrm/happy-hour-client-side
-	\item server-side: https://github.com/henryqrm/happy-hour-server-side
+	\item \textit{client-side}: https://github.com/henryqrm/happy-hour-client-side
+	\item \textit{server-side}: https://github.com/henryqrm/happy-hour-server-side
 \end{enumerate}
 
 \section{\esp CONCLUSÕES E TRABALHOS FUTUROS}
 
-Este trabalho teve como objetivo principal apresentar a abordagem de desenvolvimento Nativo, Híbrida, Web Mobile e a sua evolução, PWA. A partir disso foi desenvolvido um protótipo de solução para casas de Happy Hour utilizando a abordagem PWA e feito as comparações em cima das abordagens apresentadas.
+Este trabalho teve como objetivo principal apresentar a abordagem de desenvolvimento Nativo, Híbrida, Web Mobile e a sua evolução, PWA. A partir disso foi desenvolvido um protótipo de solução para casas de \textit{Happy Hour} utilizando a abordagem PWA e feito as comparações em cima das abordagens apresentadas.
 
-Ao utilizar a linguagem Javascript no client-side e, em seguida, ser capaz de reutilizar a mesma linguagem no servidor em toda a estrutura há uma redução significativa na quantidade de alternância de contexto entre as diversas linguagens de programação que o desenvolvedor precisa compreender, devido a isto, reduz de forma significativa o tempo de desenvolvimento, fato interessante para diminuir custos com equipe e tempo de desenvolvimento.
+Ao utilizar a linguagem Javascript no \textit{client-side} e, em seguida, ser capaz de reutilizar a mesma linguagem no servidor em toda a estrutura há uma redução significativa na quantidade de alternância de contexto entre as diversas linguagens de programação que o desenvolvedor precisa compreender, devido a isto, reduz de forma significativa o tempo de desenvolvimento, fato interessante para diminuir custos com equipe e tempo de desenvolvimento.
 
-Diante dos resultados obtidos, e com o desenvolvimento de um protótipo foi possível verificar vantagens e desvantagens ao utilizar a abordagem de desenvolvimento Progressive Web Apps. Por ser relativamente uma abordagem de desenvolvimento recente e com algumas limitações, esta apresenta um enorme potencial em seu uso. Contudo o seu uso hoje deve-se ter cautela, pois ainda há muito o que ser feito para se tornar uma tecnologia sólida e usual no mercado de desenvolvimento mobile. A melhora e evolução contínua das tecnologias core da Web tornará, em um futuro breve, a principal abordagem para o desenvolvimento de aplicações mobile.
+Diante dos resultados obtidos, e com o desenvolvimento de um protótipo foi possível verificar vantagens e desvantagens ao utilizar a abordagem de desenvolvimento \textit{Progressive Web Apps}. Por ser relativamente uma abordagem de desenvolvimento recente e com algumas limitações, esta apresenta um enorme potencial em seu uso. Contudo o seu uso hoje deve-se ter cautela, pois ainda há muito o que ser feito para se tornar uma tecnologia sólida e usual no mercado de desenvolvimento mobile. A melhora e evolução contínua das tecnologias core da Web tornará, em um futuro breve, a principal abordagem para o desenvolvimento de aplicações mobile.
 
-Como trabalho futuro decorrente deste poderia ser a comparação do mesmo protótipo em outras abordagens, como a nativa, por exemplo. Ou ainda a evolução do protótipo para uma solução completa, pois é necessário a implementação de funcionalidades e outros requisitos que atendem outros atores que participam do fluxo das casas Happy Hour, como por exemplo o garçom e a cozinha do estabelecimento.
+Como trabalho futuro decorrente deste poderia ser a comparação do mesmo protótipo em outras abordagens, como a nativo, por exemplo. Ou ainda a evolução do protótipo para uma solução completa, pois é necessário a implementação de funcionalidades e outros requisitos que atendem outros atores que participam do fluxo das casas \textit{Happy Hour}, como por exemplo o garçom e a cozinha do estabelecimento.
 
 
 
@@ -424,15 +577,15 @@ As ilustrações devem ser inseridas seguindo o exemplo da Figura \ref{fig:figur
 \end{figure}
 \vspace{-0.5cm}
 
-\subsection{\esp Inserção de tela de software}
+\subsection{\esp Inserção de tela de \textit{software}}
 
-Nos casos de telas de \textit{software}, devem ser inseridas como figuras, e referenciadas no texto
+Nos casos de telas de \textit{\textit{software}}, devem ser inseridas como figuras, e referenciadas no texto
 como na Figura \ref{fig:tela1}. Além disso, é necessário que seja citada no texto a empresa desenvolvedora.
 
 % Figura
 \begin{figure}[!ht]
 	\centering	
-	\caption[\hspace{0.1cm}Exemplo de tela de software.]{Exemplo de tela de software}
+	\caption[\hspace{0.1cm}Exemplo de tela de \textit{software}.]{Exemplo de tela de \textit{software}}
 	  \vspace{-0.4cm}
 	\includegraphics[width=.8\textwidth]{figuras/tela1.png}
 	% Caption centralizada
@@ -641,11 +794,11 @@ suspende, por assim dizer, o processo de satisfação das necessidades.
 \subsubsection{\esp Textual de outros idiomas (Tradução)}
 
 \begin{citacaodireta} 
-Um \textit{cluster} é um computador paralelo construído de componentes e processos de \textit{software} (tal como sistema de \textit{software}). 
+Um \textit{cluster} é um computador paralelo construído de componentes e processos de \textit{\textit{software}} (tal como sistema de \textit{\textit{software}}). 
 Um \textit{cluster} é formado de nós, cada um contendo um ou mais processadores, memória que é compartilhada por todos os processadores do nodo 
 (somente eles), e dispositivos periféricos adicionais (tais como discos), conectados pela rede e que permitem tráfego de dados entre os nós...
 \cite[p. 10, tradução nossa]{groupp}\footnote {  … a cluster is a parallel computer that is constructed of commodity  componets and runs 
-(as its system software) commodity software. A cluster is made of nodes, each conteining one or more processors, memory that is  shared 
+(as its system \textit{software}) commodity \textit{software}. A cluster is made of nodes, each conteining one or more processors, memory that is  shared 
 by all of the processors in (and only on) the node, and addtional peripheral devices (surch as disks),
  connected by network that allows data to move between the nodes}.
 \end{citacaodireta}
@@ -674,9 +827,9 @@ Caso essa citação não fizesse parte do texto será referencia dessa forma \ci
 
 Citações institucionais ou documentos técnicos de alguma entidade devem ser citados desta forma \cite{pmbok}.
 
-\subsubsection{\esp Tela de software}
+\subsubsection{\esp Tela de \textit{software}}
 
-Para  citar a tela de um \textit{software} faça da seguinte forma, \citeonline{tela1}.
+Para  citar a tela de um \textit{\textit{software}} faça da seguinte forma, \citeonline{tela1}.
 
 \subsubsection{\esp Citações da Biblia Sagrada}
 

@@ -3,10 +3,10 @@
 
 # TODO
 
-[] Passar todos os nomes estrangeiros para itálico
+- [] Passar todos os nomes estrangeiros para itálico
 
-[] Adicionar as referências
+- [] Adicionar as referências
 
-[] Adicionar Wireframe
+- [x] Adicionar Wireframe
 
-[] Adicionar telas do front
+- [] Adicionar telas do front
